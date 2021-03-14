@@ -1,0 +1,53 @@
+/* @Keyframe */
+@keyframes animate{
+    0%, 100%{
+        background-image: url(../img/pexels-ella-olsson-1640774.jpg);
+    }
+    20%{
+        background-image: url(../img/pexels-pixabay-357737.jpg);
+    }
+    40%{
+        background-image: url(../img/pexels-pixabay-357743.jpg);
+    }
+    60%{
+        background-image: url(../img/pexels-vaibhav-jadhav-3218467.jpg);
+    }
+    80%{
+        background-image: url(../img/pexels-rene-asmussen-2544829.jpg);
+    }
+}
+
+
+body{
+    margin: 0; padding: 0;
+    font-family: arial;
+}
+.container{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+}
+.outer{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+.details{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.details h1{
+    font-size: 4em;
+}
+.details h2{
+    font-size: 2em;
+}
